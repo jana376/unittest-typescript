@@ -65,3 +65,16 @@ test("1 divided by 0 is Infinity", () => {
   expect(actual).toBe(expected);
 });
 
+test("1 divided by 0 expect error", () => {
+  // Arrange
+  const a: number = 1;
+  const b: number = 0;
+  const expected: number = Infinity;
+
+  // Act
+  const actual: number = division(a, b);
+
+  // Act & Assert
+  expect(() => division(a, b)).toThrow("Division by zero is not allowed");
+});
+

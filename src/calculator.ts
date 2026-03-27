@@ -14,4 +14,12 @@ export function division(divisor: number, divident: number): number {
   return divisor / divident;
 }
 
+export function division(divident: number, divisor: number): number {
+  if (divisor === 0) {
+    throw new Error("Division by zero is not allowed");
+  }
+
+  return divident / divisor;
+}
+
 
