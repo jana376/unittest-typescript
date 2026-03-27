@@ -51,3 +51,17 @@ test("4 divided by 2 is 2", () => {
   // Assert
   expect(actual).toBe(expected);
 });
+
+test("1 divided by 0 is Infinity", () => {
+  // Arrange
+  const a: number = 1;
+  const b: number = 0;
+  const expected: number = Infinity;
+
+  // Act
+  const actual: number = division(a, b);
+
+  // Assert
+  expect(actual).toBe(expected);
+});
+
