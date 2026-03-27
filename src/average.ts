@@ -13,3 +13,6 @@ export function mean(numbers: number[]): number {
   return mean;
 }
 
+export function median(numbers: number[]): number {
+  return 0.0;
+}

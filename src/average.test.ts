@@ -23,8 +23,40 @@ const actual: number = mean(numbers);
   expect(actual).toBe(expected);
 });
 
-
 test('mean of no numbers', () => {
 
   expect(() => mean([])).toThrowError('Error');
+});
+
+
+test('median for odd number of elements', () => {
+  // Arrange
+  const numbers: number[] = [1, 2, 3, 4, 5];
+  const expected: number = 3;
+
+  // Act
+  const actual: number = median(numbers);
+
+  // Assert
+  expect(actual).toBe(expected);
+});
+
+test('median for even number of elements', () => {
+  // Arrange
+  const numbers: number[] = [1, 2, 3, 4];
+  const expected: number = (2+3)/2;
+
+  // Act
+  const actual: number = median(numbers);
+
+  // Assert
+  expect(actual).toBe(expected);
+});
+
+test('median for no elements', () => {
+  // Arrange
+  const numbers: number[] = [];
+
+  // Act, Assert
+  expect(() => median(numbers)).toThrowError('Error');
 });
