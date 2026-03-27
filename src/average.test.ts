@@ -22,3 +22,9 @@ const actual: number = mean(numbers);
 //Assert
   expect(actual).toBe(expected);
 });
+
+
+test('mean of no numbers', () => {
+
+  expect(() => mean([])).toThrowError('Error');
+});
