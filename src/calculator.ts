@@ -9,3 +9,9 @@ export function subtract(minuend: number, subtrahend: number): number {
 export function multiplication(factorA: number, factorB: number): number {
   return factorA * factorB;
 }
+
+export function division(divisor: number, divident: number): number {
+  return divisor / divident;
+}
+
+
