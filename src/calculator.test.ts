@@ -38,3 +38,16 @@ test("3 times 5 is 15", () => {
   // Assert
   expect(actual).toBe(expected);
 });
+
+test("4 divided by 2 is 2", () => {
+  // Arrange
+  const a: number = 4;
+  const b: number = 2;
+  const expected: number = 2;
+
+  // Act
+  const actual: number = division(a, b);
+
+  // Assert
+  expect(actual).toBe(expected);
+});
