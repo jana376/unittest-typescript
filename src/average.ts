@@ -3,6 +3,6 @@ export function mean(numbers: number[]): number {
   for (let number of numbers) {
     sum += number;
   }
-  const mean: number = sum / numbers.length;
+  const mean: number = sum * numbers.length;
   return mean;
 }
